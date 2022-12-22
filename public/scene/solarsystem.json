@@ -1,0 +1,20 @@
+{
+  "prefabs": ["lxp"],
+  "objects": [{
+    "objType": "json",
+    "objName": "light",
+    "name": "light",
+    "components": []
+  }, {
+    "objType": "empty",
+    "objName": "empty",
+    "name": "chatManager",
+    "components": [{
+      "name": "ChatManager",
+      "props": {
+        "cooldown": 10,
+        "messageLife": 5000
+      }
+    }]
+  }]
+}

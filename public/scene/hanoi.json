@@ -1,0 +1,188 @@
+{
+  "prefabs": ["player", "plate"],
+  "objects": [{
+      "objType": "json",
+      "objName": "light",
+      "name": "light",
+      "components": []
+    },
+    {
+      "objType": "json",
+      "objName": "floor",
+      "name": "floor",
+      "position": [0, 0, 0],
+      "components": []
+    },
+    {
+      "//": "看板",
+      "objType": "obj",
+      "objName": "board",
+      "name": "board",
+      "position": [9, 0, 6],
+      "rotation": [0, 1.5, 0],
+      "scale": [2.5, 2.5, 2.5],
+      "components": []
+    },
+    {
+      "//": "信息按钮",
+      "objType": "obj",
+      "objName": "btn_e",
+      "name": "info1",
+      "position": [8, 0, 6],
+      "rotation": [0, -1.5707963267948966, 0],
+      "scale": [0.1, 0.1, 0.1],
+      "components": [
+        {
+          "name": "TowerTrigger",
+          "props": {
+            "triggerType": 6
+          }
+        },
+        {
+          "name": "StepTrigger",
+          "props": {
+            "triggerRadius": 0.3,
+            "selfHeight": 0.08
+          }
+        }
+      ]
+    },
+    {
+      "objType": "json",
+      "objName": "tower",
+      "name": "towerA",
+      "position": [-4, 2.5, 0],
+      "components": []
+    },
+    {
+      "objType": "json",
+      "objName": "tower",
+      "name": "towerB",
+      "position": [0, 2.5, 0],
+      "components": []
+    },
+    {
+      "objType": "json",
+      "objName": "tower",
+      "name": "towerC",
+      "position": [4, 2.5, 0],
+      "components": []
+    },
+    {
+      "objType": "empty",
+      "objName": "empty",
+      "name": "TowerController",
+      "networkId": "TowerController",
+      "components": [{
+        "name": "TowerController",
+        "props": {
+          "cooldown": 50
+        }
+      }]
+    },
+    {
+      "objType": "obj",
+      "objName": "btn_3",
+      "name": "btn3",
+      "position": [-1, 0, 3],
+      "rotation": [0, 1.5707963267948966, 0],
+      "scale": [0.1, 0.1, 0.1],
+      "components": [
+        {
+          "name": "StepTrigger",
+          "props": {
+            "triggerRadius": 0.3,
+            "selfHeight": 0.08
+          }
+        },
+        {
+          "name": "TowerTrigger",
+          "props": {
+            "triggerType": 3
+          }
+        }
+      ]
+    },
+    {
+      "objType": "obj",
+      "objName": "btn_4",
+      "name": "btn4",
+      "position": [0, 0, 3],
+      "rotation": [0, 1.5707963267948966, 0],
+      "scale": [0.1, 0.1, 0.1],
+      "components": [
+        {
+          "name": "StepTrigger",
+          "props": {
+            "triggerRadius": 0.3,
+            "selfHeight": 0.08
+          }
+        },
+        {
+          "name": "TowerTrigger",
+          "props": {
+            "triggerType": 4
+          }
+        }
+      ]
+    },
+    {
+      "objType": "obj",
+      "objName": "btn_5",
+      "name": "btn5",
+      "position": [1, 0, 3],
+      "rotation": [0, 1.5707963267948966, 0],
+      "scale": [0.1, 0.1, 0.1],
+      "components": [
+        {
+          "name": "StepTrigger",
+          "props": {
+            "triggerRadius": 0.3,
+            "selfHeight": 0.08
+          }
+        },
+        {
+          "name": "TowerTrigger",
+          "props": {
+            "triggerType": 5
+          }
+        }
+      ]
+    },
+    {
+      "objType": "obj",
+      "objName": "btn_e",
+      "name": "start",
+      "position": [4, 0, 3],
+      "rotation": [0, 1.5707963267948966, 0],
+      "scale": [0.15, 0.15, 0.15],
+      "components": [
+        {
+          "name": "BeginTrigger",
+          "props": {
+            "triggerRadius": 0.3,
+            "selfHeight": 0.10
+          }
+        },
+        {
+          "name": "TowerTrigger",
+          "props": {
+            "triggerType": 0
+          }
+        }
+      ]
+    },
+    {
+      "objType": "empty",
+      "objName": "empty",
+      "name": "chatManager",
+      "components": [{
+        "name": "ChatManager",
+        "props": {
+          "cooldown": 10,
+          "messageLife": 5000
+        }
+      }]
+    }
+  ]
+}

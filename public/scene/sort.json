@@ -1,0 +1,195 @@
+{
+  "prefabs": ["player", "char_e"],
+  "objects": [{
+      "objType": "json",
+      "objName": "light",
+      "name": "light",
+      "components": []
+    },
+    {
+      "objType": "json",
+      "objName": "floor",
+      "name": "floor",
+      "position": [0, 0, 0],
+      "components": []
+    },
+    {
+      "objType": "empty",
+      "objName": "empty",
+      "name": "Sort",
+      "networkId": "Sort",
+      "components": [{
+        "name": "SortController",
+        "props": {
+          "cooldown": 10
+        }
+      }]
+    },
+    {
+      "//": "产生-99~99随机数 中间",
+      "objType": "obj",
+      "objName": "btn_e",
+      "name": "randomnumber",
+      "position": [0, 0, 2],
+      "rotation": [0, -1.5707963267948966, 0],
+      "scale": [0.1, 0.1, 0.1],
+      "components": [
+        {
+          "name": "StepTrigger",
+          "props": {
+            "triggerRadius": 0.3,
+            "selfHeight": 0.08
+          }
+        },
+        {
+          "name": "SortTrigger",
+          "props": {
+            "triggerType": 0
+          }
+        }
+      ]
+    },
+    {
+      "//": "冒泡排序 左1",
+      "objType": "obj",
+      "objName": "move",
+      "name": "bubblesort",
+      "position": [-2, 0, 2],
+      "rotation": [0, 1.5707963267948966, 0],
+      "scale": [0.1, 0.1, 0.1],
+      "components": [
+        {
+          "name": "StepTrigger",
+          "props": {
+            "triggerRadius": 0.3,
+            "selfHeight": 0.08
+          }
+        },
+        {
+          "name": "SortTrigger",
+          "props": {
+            "triggerType": 1
+          }
+        }
+      ]
+    },
+    {
+      "//": "快速排序 左2",
+      "objType": "obj",
+      "objName": "move",
+      "name": "quicksort",
+      "position": [-1, 0, 2],
+      "rotation": [0, 1.5707963267948966, 0],
+      "scale": [0.1, 0.1, 0.1],
+      "components": [
+        {
+          "name": "StepTrigger",
+          "props": {
+            "triggerRadius": 0.3,
+            "selfHeight": 0.08
+          }
+        },
+        {
+          "name": "SortTrigger",
+          "props": {
+            "triggerType": 2
+          }
+        }
+      ]
+    },
+    {
+      "//": "插入排序 右2",
+      "objType": "obj",
+      "objName": "move",
+      "name": "insertsort",
+      "position": [1, 0, 2],
+      "rotation": [0, -1.5707963267948966, 0],
+      "scale": [0.1, 0.1, 0.1],
+      "components": [
+        {
+          "name": "StepTrigger",
+          "props": {
+            "triggerRadius": 0.3,
+            "selfHeight": 0.08
+          }
+        },
+        {
+          "name": "SortTrigger",
+          "props": {
+            "triggerType": 3
+          }
+        }
+      ]
+    },
+    {
+      "//": "选择排序 右1",
+      "objType": "obj",
+      "objName": "move",
+      "name": "selectsort",
+      "position": [2, 0, 2],
+      "rotation": [0, -1.5707963267948966, 0],
+      "scale": [0.1, 0.1, 0.1],
+      "components": [
+        {
+          "name": "StepTrigger",
+          "props": {
+            "triggerRadius": 0.3,
+            "selfHeight": 0.08
+          }
+        },
+        {
+          "name": "SortTrigger",
+          "props": {
+            "triggerType": 4
+          }
+        }
+      ]
+    },
+    {
+      "//": "看板",
+      "objType": "obj",
+      "objName": "board",
+      "name": "board",
+      "position": [9, 0, 6],
+      "rotation": [0, 1.5, 0],
+      "scale": [2.5, 2.5, 2.5],
+      "components": []
+    },
+    {
+      "//": "信息按钮",
+      "objType": "obj",
+      "objName": "btn_e",
+      "name": "description",
+      "position": [8, 0, 6],
+      "rotation": [0, -1.5707963267948966, 0],
+      "scale": [0.1, 0.1, 0.1],
+      "components": [
+        {
+          "name": "StepTrigger",
+          "props": {
+            "triggerRadius": 0.3,
+            "selfHeight": 0.08
+          }
+        },
+        {
+          "name": "SortTrigger",
+          "props": {
+            "triggerType": 5
+          }
+        }
+      ]
+    },
+    {
+      "objType": "empty",
+      "objName": "empty",
+      "name": "chatManager",
+      "components": [{
+        "name": "ChatManager",
+        "props": {
+          "cooldown": 10,
+          "messageLife": 5000
+        }
+      }]
+    }
+  ]
+}

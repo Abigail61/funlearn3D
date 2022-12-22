@@ -1,0 +1,10 @@
+# webstorm generated file
+.idea/
+
+# npm package
+node_modules/
+
+# generated file
+public/bundle.js
+
+dist
